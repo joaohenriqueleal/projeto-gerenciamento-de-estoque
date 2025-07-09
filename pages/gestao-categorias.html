@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de categorias</title>
+    <link rel="stylesheet" href="../styles/gestao-categorias.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <main>
+        <section id="search">
+            <input type="text" placeholder="deigite a pesquisa" id="inputPesquisa"
+                name="inputPesquisa" required maxlength="50">
+            <button id="buttonSearch">Pesquisar</button>
+            <button id="buttonReload">
+                <i class="bi bi-arrow-clockwise"></i>
+            </button>
+        </section>
+        <section id="dgv">
+            <div id="dgvHead">
+                <h1>Categoria</h1>
+                <h1>Operações</h1>
+            </div>
+            <div id="dgvBody">
+                <!-- Inseridos por JS -->
+            </div>
+        </section>
+    </main>
+    <script src="../scripts/gestao-categorias.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#search {
+    background-color: rgb(220, 220, 220);
+
+    padding: 30px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 20px;
+    width: 400px;
+
+    color: gray;
+    font-size: 1.3em;
+    font-weight: bolder;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+input:hover {
+    background-color: rgb(243, 243, 243);
+
+    transform: translateY(-5px);
+}
+
+#buttonSearch {
+    background-color: #248;
+    border-radius: 10px;
+    border: none;
+
+    padding: 20px;
+
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#buttonSearch:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.21);
+    background-color: rgb(72, 121, 218);
+
+    transform: translateY(-5px);
+}
+
+#buttonReload {
+    background-color: #248;
+    border-radius: 50%;
+    border: none;
+
+    padding: 20px;
+
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#buttonReload:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.21);
+    background-color: rgb(72, 121, 218);
+
+    transform: translateY(-5px);
+}
+
+#dgv {
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+#dgvHead {
+    background-color: #248;
+    border-radius: 10px 10px 0 0;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.dgvBodyRow {
+    background-color: white;
+
+    padding:10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+p.nameCategory {
+    width: 50%;
+
+    font-size: 1.5em;
+    font-weight: bolder;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.operations {
+    width: 50%;
+
+    font-size: 1.1em;
+    font-weight: bolder;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.iDelete {
+    background-color: rgb(255, 44, 44);
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    cursor: pointer;
+    transition: all .3s;
+
+    color: white;
+}
+
+.iDelete:hover {
+    background-color: rgb(255, 124, 124);
+}
+
+.iEdit {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    cursor: pointer;
+    transition: all .3s;
+
+    color: white;
+}
+
+.iEdit:hover {
+    background-color: white;
+    color: #000;
+}

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#principal {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.destination {
+    background-color: #ededed;
+    border-radius: 10px;
+
+    width: inherit;
+    height: 40px;
+
+
+    color: black;
+    font-size: 1.1em;
+    text-decoration: none;
+
+    padding: 10px;
+
+    transition: all .2s;
+}
+
+.destination:hover {
+    background-color: lightgray;
+    color: #000 !important;
+}
+
+#log-out {
+    color: red;
+}
+
+nav {
+    background-color: #f6f6f6;
+    padding: 10px;
+    
+    grid-area: 1 / 1 / -1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main {
+    grid-area: 1 / 3 / -1 / -1;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+#removeAccount {
+    color: rgb(150, 0, 0);
+}

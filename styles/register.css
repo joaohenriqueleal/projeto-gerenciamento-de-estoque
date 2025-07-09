@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Classes auxiliáres. */
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+/* ==================== */
+
+body {
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    height: 400px;
+    width: 700px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+fieldset {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.31);
+    border: 3px solid black;
+    border-radius: 5px;
+
+    padding: 50px;
+    
+    width: inherit;
+    height: inherit;
+}
+
+legend {
+    padding: 0 20px;
+
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+div#inputs-and-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.31);
+    border: 3px solid gray;
+    border-radius: 8px;
+
+    width: 500px;
+    height: 50px;
+
+    padding: 8px;
+
+    font-size: 1.3em;
+    font-weight: bolder;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+input:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.33);
+    background-color: #eeeeee;
+
+    transform: translateY(-3px);
+}
+
+button {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.31);
+    background-color: #248;
+    border-radius: 45%;
+    border: none;
+
+    padding: 20px;
+    margin-top: 20px;
+
+    font-size: 2em;
+    color: white;
+
+    cursor: pointer;
+    transition: all .3s;
+
+    align-self: flex-end;
+}
+
+button:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.33);
+    background-color: rgb(74, 116, 200);
+
+    transform: translateY(-5px);
+}
