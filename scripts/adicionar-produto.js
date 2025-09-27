@@ -66,6 +66,11 @@ input_select.addEventListener('change', (event) => {
 
 // --- Adicionar Produto ---
 const add_product = () => {
+    if (!(load_categories().include(input_select.value))) {
+        alert('Categoria selecionada não existe!')
+        return
+    }
+
     if (input_nome.value == '' || input_preco.value == '' || input_id.value == '' || input_qtd.value == '') {
         alert('Preencha todos os campos!')
         return
@@ -94,10 +99,8 @@ const add_product = () => {
     alert('Produto adicionado com sucesso!')
 }
 
-// --- Evento botão ---
 btn_add_produto.addEventListener('click', (event) => {
     add_product()
 })
 
-// Inicializa
 create_options()
